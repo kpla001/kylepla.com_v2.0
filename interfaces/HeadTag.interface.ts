@@ -1,7 +1,6 @@
 import { HTMLAttributeReferrerPolicy } from 'react'
 
 export interface HeadTagProps {
-  pageId: string
   title: {
     titleText: string
   }
