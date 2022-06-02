@@ -14,7 +14,7 @@ export interface HeadTagProps {
     href: string
     integrity?: string
     crossOrigin?: string
-    referrerPolicy?: HTMLAttributeReferrerPolicy
+    referrerPolicy?: string
   }[]
   scripts: {
     src?: string
