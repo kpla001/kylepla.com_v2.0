@@ -1,12 +1,16 @@
+import styles from '../styles/Home.module.scss'
 import type { NextPage } from 'next'
 import HeadTag from '../components/HeadTag/HeadTag'
+import Profile from '../components/Profile/Profile'
 import homeConstants from './constants/index.constants'
-import styles from '../styles/Home.module.scss'
+
+const { headTagProps, profileProps } = homeConstants
 
 const Home: NextPage = () => {
   return (
     <div id='linkTree-page'>
-      <HeadTag {...homeConstants.headTagProps} />
+      <HeadTag {...headTagProps} />
+      <Profile {...profileProps} />
     </div>
   )
 }
